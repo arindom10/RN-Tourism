@@ -6,8 +6,8 @@ const Contact = () => {
           Contact Us
         </h1>
         <p className="text-gray-600 text-center mb-8">
-          Have any questions? We'd love to hear from you! Fill out the form
-          below, and we'll get back to you as soon as possible.
+          Have any questions? We did love to hear from you! Fill out the form
+          below, and we will get back to you as soon as possible.
         </p>
 
         <form className="space-y-6">
