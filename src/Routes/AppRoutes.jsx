@@ -8,6 +8,7 @@ import Blogs from "../Pages/Blogs/Blogs";
 import Contact from "../Pages/Contact/Contact";
 import Certificate from "../Pages/Certificate/Certificate";
 import NotFound from "../Pages/NotFound/NotFound";
+import ApplyNow from "../Pages/ApplyNow/ApplyNow";
 
 const AppRoutes = () => (
   <Router>
@@ -20,6 +21,7 @@ const AppRoutes = () => (
       <Route path={RoutePaths.BLOGS} element={<Blogs />} />
       <Route path={RoutePaths.CONTACT} element={<Contact />} />
       <Route path={RoutePaths.CERTIFICATE} element={<Certificate />} />
+      <Route path={RoutePaths.ApplyNow} element={<ApplyNow />} />
     </Routes>
   </Router>
 );

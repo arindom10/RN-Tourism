@@ -72,7 +72,7 @@ const Navbar = () => {
           {/* Apply Now Button */}
           <div className="hidden md:block">
             <a
-              href="/verify-certificate"
+              href="/apply-now"
               className="bg-[#a12326] text-white px-4 py-2 text-sm font-medium  flex items-center hover:bg-[#871d1f]"
             >
               {/* Icon */}

@@ -7,6 +7,7 @@ const RoutePaths = {
   CONTACT: "/contact",
   CERTIFICATE: "/verify-certificate",
   NotFound: "*",
+  ApplyNow: "/apply-now",
 };
 
 export default RoutePaths;
