@@ -4,7 +4,7 @@ const Navbar = () => {
   const [isProgramOpen, setIsProgramOpen] = useState(false);
 
   return (
-    <nav className="bg-[#f5e3a1] shadow-lg container mx-auto">
+    <nav className="bg-[#f3e09a] shadow-lg container mx-auto">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-3">
           {/* Logo */}
@@ -33,7 +33,6 @@ const Navbar = () => {
               ABOUT
             </a>
 
-            {/* Dropdown Menu for Program */}
             <a
               href="/program"
               className="relative text-sm font-medium text-gray-800 hover:text-gray-600"

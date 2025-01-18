@@ -21,13 +21,13 @@ const Footer = () => {
             Your Gateway to a World-Class Culinary and Hospitality Education
           </p>
           <div className="flex space-x-4 text-gray-400">
-            <a href="#" className="hover:text-white transition">
+            <a href="*" className="hover:text-white transition">
               <FaFacebookF />
             </a>
-            <a href="#" className="hover:text-white transition">
+            <a href="*" className="hover:text-white transition">
               <FaYoutube />
             </a>
-            <a href="#" className="hover:text-white transition">
+            <a href="*" className="hover:text-white transition">
               <FaInstagram />
             </a>
           </div>
@@ -57,22 +57,22 @@ const Footer = () => {
           <hr className="border-gray-600 mb-4" />
           <ul className="text-sm space-y-2">
             <li>
-              <a href="#" className="hover:text-gray-300 transition">
+              <a href="*" className="hover:text-gray-300 transition">
                 Admission
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300 transition">
+              <a href="*" className="hover:text-gray-300 transition">
                 Customer Support
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300 transition">
+              <a href="*" className="hover:text-gray-300 transition">
                 Terms & Conditions
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300 transition">
+              <a href="*" className="hover:text-gray-300 transition">
                 Privacy Policy
               </a>
             </li>
@@ -85,17 +85,17 @@ const Footer = () => {
           <hr className="border-gray-600 mb-4" />
           <ul className="text-sm space-y-2">
             <li>
-              <a href="#" className="hover:text-gray-300 transition">
+              <a href="*" className="hover:text-gray-300 transition">
                 Classes
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300 transition">
+              <a href="*" className="hover:text-gray-300 transition">
                 Teachers
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300 transition">
+              <a href="*" className="hover:text-gray-300 transition">
                 Events
               </a>
             </li>
@@ -108,7 +108,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
           <p>
             Design by Goinnovior Limited. All rights reserved.{" "}
-            <a href="#" className="text-blue-500 hover:underline">
+            <a href="*" className="text-blue-500 hover:underline">
               360D Soul Limited
             </a>
           </p>
