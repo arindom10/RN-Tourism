@@ -4,6 +4,7 @@ import {
   FaInstagram,
   FaEnvelope,
   FaPhone,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -12,16 +13,18 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo & Description */}
         <div className="space-y-4">
-          <img
-            src="https://i.ibb.co/WfxX1MZ/0e7a6f48deab82829323eddb5ea76650.png"
-            alt="Logo"
-            className="h-16"
-          />
+          <a href="/">
+            <img
+              src="https://i.ibb.co/WfxX1MZ/0e7a6f48deab82829323eddb5ea76650.png"
+              alt="Logo"
+              className="h-16"
+            />
+          </a>
           <p className="text-sm">
             Your Gateway to a World-Class Culinary and Hospitality Education
           </p>
           <div className="flex space-x-4 text-gray-400">
-            <a href="*" className="hover:text-white transition">
+            <a href="*" className="hover:text-white transition ">
               <FaFacebookF />
             </a>
             <a href="*" className="hover:text-white transition">
@@ -29,6 +32,9 @@ const Footer = () => {
             </a>
             <a href="*" className="hover:text-white transition">
               <FaInstagram />
+            </a>
+            <a href="*" className="hover:text-white transition">
+              <FaWhatsapp />
             </a>
           </div>
         </div>
