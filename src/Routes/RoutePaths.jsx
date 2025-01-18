@@ -6,6 +6,7 @@ const RoutePaths = {
   BLOGS: "/blogs",
   CONTACT: "/contact",
   CERTIFICATE: "/verify-certificate",
+  NotFound: "*",
 };
 
 export default RoutePaths;

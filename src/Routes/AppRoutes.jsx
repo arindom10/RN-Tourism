@@ -7,11 +7,13 @@ import Faculty from "../Pages/Faculty/Faculty";
 import Blogs from "../Pages/Blogs/Blogs";
 import Contact from "../Pages/Contact/Contact";
 import Certificate from "../Pages/Certificate/Certificate";
+import NotFound from "../Pages/NotFound/NotFound";
 
 const AppRoutes = () => (
   <Router>
     <Routes>
       <Route path={RoutePaths.HOME} element={<Home />} />
+      <Route path={RoutePaths.NotFound} element={<NotFound />} />
       <Route path={RoutePaths.ABOUT} element={<About />} />
       <Route path={RoutePaths.PROGRAM} element={<Program />} />
       <Route path={RoutePaths.FACULTY} element={<Faculty />} />
