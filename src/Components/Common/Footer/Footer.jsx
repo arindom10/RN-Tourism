@@ -115,9 +115,9 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
           <p>
             Design by Goinnovior Limited. All rights reserved.{" "}
-            <a href="*" className="text-blue-500 hover:underline">
+            <Link to="*" className="text-blue-500 hover:underline">
               360D Soul Limited
-            </a>
+            </Link>
           </p>
         </div>
       </div>

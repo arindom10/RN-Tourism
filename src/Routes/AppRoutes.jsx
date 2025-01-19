@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import RoutePaths from "./RoutePaths";
-import Home from "../Pages/Home/Home";
-import About from "../Pages/About/About";
-import Program from "../Pages/Program/Program";
-import Faculty from "../Pages/Faculty/Faculty";
-import Blogs from "../Pages/Blogs/Blogs";
-import Contact from "../Pages/Contact/Contact";
-import Certificate from "../Pages/Certificate/Certificate";
-import NotFound from "../Pages/NotFound/NotFound";
-import ApplyNow from "../Pages/ApplyNow/ApplyNow";
+import Home from "../Pages/Home";
+import About from "../Pages/About";
+import Program from "../Pages/Program";
+import Faculty from "../Pages/Faculty";
+import Blogs from "../Pages/Blogs";
+import Contact from "../Pages/Contact";
+import Certificate from "../Pages/Certificate";
+import NotFound from "../Pages/NotFound";
+import ApplyNow from "../Pages/ApplyNow";
 
 import Navbar from "../Components/Common/Navbar/Navbar";
 import Footer from "../Components/Common/Footer/Footer";

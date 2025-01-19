@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Certificate = () => {
   const [certificateId, setCertificateId] = useState("");
@@ -71,12 +72,12 @@ const Certificate = () => {
       <div className="mt-8 max-w-screen-md text-center text-gray-600">
         <p>
           If you have any issues verifying a certificate, please{" "}
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="text-[#a12326] font-medium hover:underline"
           >
             contact us
-          </a>{" "}
+          </Link>{" "}
           for assistance.
         </p>
       </div>
