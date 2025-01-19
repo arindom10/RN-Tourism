@@ -6,6 +6,7 @@ import {
   FaPhone,
   FaWhatsapp,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,29 +14,29 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo & Description */}
         <div className="space-y-4">
-          <a href="/">
+          <Link to="/">
             <img
               src="https://i.ibb.co/WfxX1MZ/0e7a6f48deab82829323eddb5ea76650.png"
               alt="Logo"
               className="h-16"
             />
-          </a>
+          </Link>
           <p className="text-sm">
             Your Gateway to a World-Class Culinary and Hospitality Education
           </p>
           <div className="flex space-x-4 text-gray-400">
-            <a href="*" className="hover:text-white transition ">
+            <Link to="*" className="hover:text-white transition ">
               <FaFacebookF />
-            </a>
-            <a href="*" className="hover:text-white transition">
+            </Link>
+            <Link to="*" className="hover:text-white transition">
               <FaYoutube />
-            </a>
-            <a href="*" className="hover:text-white transition">
+            </Link>
+            <Link to="*" className="hover:text-white transition">
               <FaInstagram />
-            </a>
-            <a href="*" className="hover:text-white transition">
+            </Link>
+            <Link to="*" className="hover:text-white transition">
               <FaWhatsapp />
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -63,24 +64,24 @@ const Footer = () => {
           <hr className="border-gray-600 mb-4" />
           <ul className="text-sm space-y-2">
             <li>
-              <a href="*" className="hover:text-gray-300 transition">
+              <Link to="*" className="hover:text-gray-300 transition">
                 Admission
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="*" className="hover:text-gray-300 transition">
+              <Link to="*" className="hover:text-gray-300 transition">
                 Customer Support
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="*" className="hover:text-gray-300 transition">
+              <Link to="*" className="hover:text-gray-300 transition">
                 Terms & Conditions
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="*" className="hover:text-gray-300 transition">
+              <Link to="*" className="hover:text-gray-300 transition">
                 Privacy Policy
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -91,19 +92,19 @@ const Footer = () => {
           <hr className="border-gray-600 mb-4" />
           <ul className="text-sm space-y-2">
             <li>
-              <a href="*" className="hover:text-gray-300 transition">
+              <Link to="*" className="hover:text-gray-300 transition">
                 Classes
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="*" className="hover:text-gray-300 transition">
+              <Link to="*" className="hover:text-gray-300 transition">
                 Teachers
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="*" className="hover:text-gray-300 transition">
+              <Link to="*" className="hover:text-gray-300 transition">
                 Events
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

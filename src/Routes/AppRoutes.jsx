@@ -10,8 +10,12 @@ import Certificate from "../Pages/Certificate/Certificate";
 import NotFound from "../Pages/NotFound/NotFound";
 import ApplyNow from "../Pages/ApplyNow/ApplyNow";
 
+import Navbar from "../Components/Common/Navbar/Navbar";
+import Footer from "../Components/Common/Footer/Footer";
+
 const AppRoutes = () => (
   <Router>
+    <Navbar />
     <Routes>
       <Route path={RoutePaths.HOME} element={<Home />} />
       <Route path={RoutePaths.NotFound} element={<NotFound />} />
@@ -23,6 +27,7 @@ const AppRoutes = () => (
       <Route path={RoutePaths.CERTIFICATE} element={<Certificate />} />
       <Route path={RoutePaths.ApplyNow} element={<ApplyNow />} />
     </Routes>
+    <Footer />
   </Router>
 );
 
