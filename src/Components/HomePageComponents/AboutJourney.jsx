@@ -1,13 +1,13 @@
 const AboutJourney = () => {
   return (
-    <section className="bg-white p-8">
+    <section className="p-8">
       <div className="max-w-7xl mx-auto space-y-8">
         {/* Top Image */}
         <div>
           <img
             src="https://i.ibb.co/0Cnvxgr/Frame-1261155500.png"
             alt="Chefs team"
-            className="w-full rounded shadow-lg"
+            className="w-3/4 rounded items-center mx-auto"
           />
         </div>
 
@@ -19,7 +19,7 @@ const AboutJourney = () => {
               <img
                 src="https://i.ibb.co/Twx4sRM/Section.png"
                 alt="Chef at work"
-                className="rounded shadow-lg"
+                className="rounded shadow-lg w-full"
               />
             </div>
 
@@ -40,7 +40,7 @@ const AboutJourney = () => {
 
           {/* Right Column */}
           <div className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-red-700">
+            <h2 className="text-[54px] font-bold text-red-700">
               A LITTLE STORY ABOUT OUR JOURNEY
             </h2>
             <p className="text-gray-600 text-justify">
@@ -51,7 +51,12 @@ const AboutJourney = () => {
               offer comprehensive courses in tourism and hospitality management,
               including food preparation and culinary arts. Join us to embark on
               a journey of excellence and innovation in the hospitality
-              industry.
+              industry. we offer comprehensive courses in tourism and
+              hospitality management, including food preparation and culinary
+              arts. Join us to embark on a journey of excellence and innovation
+              in the hospitality industry. we offer comprehensive courses in
+              tourism and hospitality management, including food preparation and
+              culinary arts. Join us to embark on a journey of excellence and.
             </p>
             <div>
               <img
