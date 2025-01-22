@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const HomePageCarousel = () => {
   const images = [
@@ -62,7 +62,6 @@ const HomePageCarousel = () => {
         </div>
       </div>
 
-      {/* Social Icons */}
       <div className="absolute top-4 right-4 z-10 flex space-x-4">
         <a href="#" className="text-white hover:text-yellow-500">
           <i className="fab fa-facebook-f"></i>
@@ -75,7 +74,6 @@ const HomePageCarousel = () => {
         </a>
       </div>
 
-      {/* Carousel */}
       <div className="relative h-screen flex items-center justify-center">
         <img
           src={images[currentIndex]}
