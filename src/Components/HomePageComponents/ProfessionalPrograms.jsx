@@ -6,7 +6,7 @@ const ProfessionalPrograms = () => {
   return (
     <section className="bg-white p-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-[#993128] text-center mb-6">
+        <h2 className="text-5xl font-bold text-[#993128] text-center mb-6">
           PROFESSIONAL PROGRAMS
         </h2>
         <p className="text-gray-600 text-center ">

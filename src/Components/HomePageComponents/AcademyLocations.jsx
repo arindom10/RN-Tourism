@@ -8,6 +8,8 @@ const AcademyLocations = () => {
         "21/A, Road-2, Block-A, Jharnal Islam City, Rampura Bridge, Dhaka-1212",
       email: "mkhbd@gmail.com",
       phone: "+88-015-52478007",
+      image:
+        "https://i.ibb.co/SQ3XVmG/vecteezy-doodle-freehand-drawing-of-bangladesh-map-18754370-1.png",
       mapEmbedUrl:
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.8485897260066!2d90.41251831445699!3d23.75097339469247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b85fc47c7d3b%3A0x545121807a9d1425!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1617259757027!5m2!1sen!2sus", // Embed Google Maps URL for Dhaka
     },
@@ -17,6 +19,8 @@ const AcademyLocations = () => {
         "RN Tourism & Hospitality Management Institute, South Khulshi, Chittagong, Bangladesh",
       email: "mkhbd@gmail.com",
       phone: "+88-015-52478007",
+      image:
+        "https://i.ibb.co.com/HhPckyS/vecteezy-doodle-freehand-drawing-of-bangladesh-map-18754370-2.png",
       mapEmbedUrl:
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.183062029512!2d91.80807441445345!3d22.356851446801918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd888764e47e3%3A0x4ec84d34b14463d7!2sChittagong!5e0!3m2!1sen!2sus!4v1617259886217!5m2!1sen!2sus", // Embed Google Maps URL for Chittagong
     },
@@ -27,8 +31,8 @@ const AcademyLocations = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-96">
           <p className="text-yellow-500 font-medium">VISIT US</p>
-          <h2 className="text-4xl font-bold text-red-900 font-serif">
-            Explore Our Academy Locations
+          <h2 className="text-6xl font-bold text-red-900 font-serif">
+            EXPLORE OUR ACADEMY LOCATIONS
           </h2>
         </div>
 
@@ -40,7 +44,7 @@ const AcademyLocations = () => {
             >
               <div className="absolute -top-80">
                 <img
-                  src="https://i.ibb.co/SQ3XVmG/vecteezy-doodle-freehand-drawing-of-bangladesh-map-18754370-1.png"
+                  src={location.image}
                   alt={`Map of ${location.name}`}
                   className="w-72 h-full"
                 />

@@ -1,10 +1,10 @@
-import React from "react";
 import CallToActionSection from "../HomePageComponents/CallToActionSection";
+import ProfessionalPrograms from "../HomePageComponents/ProfessionalPrograms";
 
 const ProgramsPageOverView = () => {
   return (
     <div>
-      <h1>This is Programs Page</h1>
+      <ProfessionalPrograms />
       <CallToActionSection />
     </div>
   );

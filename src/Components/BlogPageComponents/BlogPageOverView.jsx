@@ -1,4 +1,3 @@
-import React from "react";
 import CallToActionSection from "../HomePageComponents/CallToActionSection";
 
 const BlogPageOverView = () => {

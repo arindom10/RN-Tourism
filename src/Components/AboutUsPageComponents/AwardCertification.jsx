@@ -18,7 +18,7 @@ const AwardCertification = () => {
 
           <h3 className="font-bold">ACCREDITATION AND RECOGNITION</h3>
 
-          <div className="flex space-x-4">
+          <div className="flex space-x-24">
             <a href="https://imgbb.com/">
               <img
                 className="w-20 h-20 object-contain"
