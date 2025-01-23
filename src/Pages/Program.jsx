@@ -1,7 +1,9 @@
+import ProgramsPageOverView from "../Components/ProgramsPageComponents/ProgramsPageOverView";
+
 const Program = () => {
   return (
     <div>
-      <h3>This is a program</h3>
+      <ProgramsPageOverView />
     </div>
   );
 };

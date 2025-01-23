@@ -48,34 +48,34 @@ const AboutUsBanner = () => {
         <div className="w-full lg:w-3/5 lg:pl-12 mt-8 lg:mt-0">
           <div className="space-y-6">
             <h3 className="text-sm  text-[#CD9B2F]">About RNTHI</h3>
-            <h4 className="text-5xl font-semibold text-[#993128]">
+            <h4 className="text-5xl font-semibold text-[#993128] mb-8">
               MASTERS AT CULINARY ARTS
             </h4>
-            <p className="text-gray-600">
+            <p className="text-gray-600 mb-8">
               RN Tourism and Hospitality Management Institute (RNTHMI), approved
               by City and Guilds, UK, and affiliated with BTEB and NSDA, offers
               premier tourism, hospitality, and culinary courses in Dhaka and
               Chittagong.
             </p>
             <div>
-              <h5 className="text-3xl font-semibold text-[#33100D]">
+              <h5 className="text-3xl font-semibold text-[#33100D] mb-8">
                 Our Mission
               </h5>
-              <p className="text-gray-600">
+              <p className="text-gray-600 mb-8">
                 To inspire and equip individuals with the culinary skills and
                 knowledge to pursue successful careers in the food industry.
               </p>
-              <h5 className="text-3xl font-semibold text-[#33100D] mt-6">
+              <h5 className="text-3xl font-semibold text-[#33100D] mb-8">
                 Our Vision
               </h5>
-              <p className="text-gray-600">
+              <p className="text-gray-600 mb-8">
                 To be the leading culinary academy, recognized for excellence in
                 education, innovation, and producing world-class chefs.
               </p>
-              <h5 className="text-3xl font-semibold text-[#33100D] mt-6">
+              <h5 className="text-3xl font-semibold text-[#33100D] mb-8">
                 Our Values
               </h5>
-              <p className="text-gray-600">
+              <p className="text-gray-600 mb-8">
                 We strive for the highest standards of education and training,
                 providing a rigorous and enriching learning experience.
               </p>
