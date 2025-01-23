@@ -1,5 +1,6 @@
 import AboutJourney from "./AboutJourney";
 import CallToActionSection from "./CallToActionSection";
+import FAQAndVideoSection from "./FAQAndVideoSection";
 import GallerySection from "./GallerySection";
 import HomePageCarousel from "./HomePageCarousel";
 import LatestNewsSection from "./LatestNewsSection";
@@ -14,6 +15,7 @@ const HomePageOverView = () => {
       <ProfessionalPrograms />
       <YourFoodFuture />
       <GallerySection />
+      <FAQAndVideoSection />
       <LatestNewsSection />
       <CallToActionSection />
     </div>
