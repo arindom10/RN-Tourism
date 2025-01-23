@@ -5,28 +5,27 @@ const AlumniTestimonials = () => {
       title: "Culinary Graduate",
       message:
         "Thanks to Chefaca, I've transformed my love for cooking into a career. The experience was both challenging and rewarding.",
-      image: "https://i.ibb.co.com/G2w1R70/Img.png", // Replace with the actual image link
+      image: "https://i.ibb.co.com/G2w1R70/Img.png",
     },
     {
       name: "Mahabub Jamil",
       title: "Restaurant Owner",
       message:
         "Chefaca's curriculum is comprehensive and well-structured, offering a perfect blend of theory and practical experience.",
-      image: "https://i.ibb.co.com/njmgq8H/Img-1.png", // Replace with the actual image link
+      image: "https://i.ibb.co.com/njmgq8H/Img-1.png",
     },
     {
       name: "Hasibur Rahman",
       title: "Food Entrepreneur",
       message:
         "The networking opportunities at Chefaca opened doors for me in the culinary world. I made lifelong connections and friendships.",
-      image: "https://i.ibb.co.com/y6yqxGt/Img-2.png", // Replace with the actual image link
+      image: "https://i.ibb.co.com/y6yqxGt/Img-2.png",
     },
   ];
 
   return (
     <section className="py-16 bg-gray-100">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Header Section */}
         <div className="flex justify-between items-center mb-8">
           <div>
             <p className="text-yellow-500 font-medium">GET INSPIRED</p>
@@ -42,12 +41,10 @@ const AlumniTestimonials = () => {
           </a>
         </div>
 
-        {/* Main Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
-          {/* Left Section */}
           <div className="relative ">
             <img
-              src="https://i.ibb.co.com/ftcf2pJ/Background-Border-3.png" // Replace with actual background image link
+              src="https://i.ibb.co.com/ftcf2pJ/Background-Border-3.png"
               alt="Alumni"
               className="w-full h-full object-cover rounded-lg shadow"
             />
@@ -75,7 +72,6 @@ const AlumniTestimonials = () => {
             </div>
           </div>
 
-          {/* Right Section */}
           <div className="bg-[#CD9B2F] p-6 rounded-lg shadow">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="mb-6">
