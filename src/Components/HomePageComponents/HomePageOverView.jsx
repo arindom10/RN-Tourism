@@ -1,4 +1,5 @@
 import AboutJourney from "./AboutJourney";
+import AcademyLocations from "./AcademyLocations.JSX";
 import AlumniTestimonials from "./AlumniTestimonials";
 import CallToActionSection from "./CallToActionSection";
 import FAQAndVideoSection from "./FAQAndVideoSection";
@@ -16,6 +17,7 @@ const HomePageOverView = () => {
       <ProfessionalPrograms />
       <YourFoodFuture />
       <GallerySection />
+      <AcademyLocations />
       <AlumniTestimonials />
       <FAQAndVideoSection />
       <LatestNewsSection />
