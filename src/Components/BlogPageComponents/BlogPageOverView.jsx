@@ -1,9 +1,10 @@
 import CallToActionSection from "../HomePageComponents/CallToActionSection";
+import BlogPageStarting from "./BlogPageStarting";
 
 const BlogPageOverView = () => {
   return (
     <div>
-      <h1>Blog Page Overview</h1>
+      <BlogPageStarting />
       <CallToActionSection />
     </div>
   );
