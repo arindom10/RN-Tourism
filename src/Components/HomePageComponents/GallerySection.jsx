@@ -2,9 +2,7 @@ const GallerySection = () => {
   return (
     <section className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Top Section */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-          {/* Left Image */}
           <div className="h-auto">
             <img
               src="https://i.ibb.co.com/0ZKk0GV/Rectangle-9.png"
@@ -13,7 +11,6 @@ const GallerySection = () => {
             />
           </div>
 
-          {/* Middle Text Section */}
           <div className="text-center lg:mx-6 relative">
             <p className="text-yellow-600 font-semibold text-sm uppercase tracking-wider">
               Gallery
@@ -30,7 +27,6 @@ const GallerySection = () => {
               View More
             </button>
 
-            {/* Images 3 and 4 below the text */}
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="h-40">
                 <img
@@ -49,7 +45,6 @@ const GallerySection = () => {
             </div>
           </div>
 
-          {/* Right Image */}
           <div className="h-auto">
             <img
               src="https://i.ibb.co.com/brwshG4/Rectangle-10.png"
@@ -59,7 +54,6 @@ const GallerySection = () => {
           </div>
         </div>
 
-        {/* Full-Width Image */}
         <div className="mt-12">
           <img
             src="https://i.ibb.co.com/LPDLrqF/Rectangle-15.png"

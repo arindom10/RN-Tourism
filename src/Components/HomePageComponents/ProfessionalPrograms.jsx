@@ -6,7 +6,6 @@ const ProfessionalPrograms = () => {
   return (
     <section className="bg-white p-8">
       <div className="max-w-7xl mx-auto">
-        {/* Title */}
         <h2 className="text-3xl font-bold text-[#993128] text-center mb-6">
           PROFESSIONAL PROGRAMS
         </h2>
@@ -19,7 +18,6 @@ const ProfessionalPrograms = () => {
           practices.
         </p>
 
-        {/* Tabs */}
         <div className="flex justify-center space-x-4 mb-6">
           <button
             className={`px-6 py-2 rounded-t-lg text-sm font-medium ${
@@ -53,7 +51,6 @@ const ProfessionalPrograms = () => {
           </button>
         </div>
 
-        {/* Tab Content */}
         <div className="p-6 bg-gray-100 rounded-lg shadow-md">
           {activeTab === "diploma" && (
             <div>

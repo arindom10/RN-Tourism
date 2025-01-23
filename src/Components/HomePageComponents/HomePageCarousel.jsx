@@ -23,7 +23,6 @@ const HomePageCarousel = () => {
 
   return (
     <div className="relative bg-gray-900 h-screen">
-      {/* Navbar */}
       <div className="absolute top-4 left-4 z-10">
         <button
           className="text-white text-2xl"
@@ -104,7 +103,7 @@ const HomePageCarousel = () => {
             Services
           </span>
         </div>
-        {/* Controls */}
+
         <button
           onClick={prevSlide}
           className="absolute left-4 text-white text-2xl bg-gray-800 bg-opacity-50 rounded-full p-2 hover:bg-gray-700"
@@ -119,7 +118,6 @@ const HomePageCarousel = () => {
         </button>
       </div>
 
-      {/* Dots */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
           <button

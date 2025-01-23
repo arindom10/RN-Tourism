@@ -2,7 +2,6 @@ const AboutJourney = () => {
   return (
     <section className="p-8">
       <div className="max-w-7xl mx-auto space-y-8">
-        {/* Top Image */}
         <div>
           <img
             src="https://i.ibb.co/0Cnvxgr/Frame-1261155500.png"
@@ -11,9 +10,7 @@ const AboutJourney = () => {
           />
         </div>
 
-        {/* Content */}
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Left Column */}
           <div className="space-y-4">
             <div>
               <img
@@ -38,7 +35,6 @@ const AboutJourney = () => {
             </div>
           </div>
 
-          {/* Right Column */}
           <div className="space-y-4">
             <h2 className="text-[54px] font-bold text-red-700">
               A LITTLE STORY ABOUT OUR JOURNEY
