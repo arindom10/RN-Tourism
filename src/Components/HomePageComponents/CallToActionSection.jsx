@@ -1,9 +1,7 @@
-import React from "react";
-
 const CallToActionSection = () => {
   return (
     <section className="  ">
-      <div className="max-w-5xl mx-auto px-6 bg-yellow-100 container py-16">
+      <div className=" mx-auto px-6 bg-yellow-100 container py-16 mb-11">
         <img
           src="https://i.ibb.co/WfxX1MZ/0e7a6f48deab82829323eddb5ea76650.png"
           alt="Logo"

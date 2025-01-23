@@ -50,7 +50,7 @@ const LatestNewsSection = () => {
           </h2>
           <p className="text-gray-700 text-lg">
             In today’s fast-paced world, staying informed is key to staying
-            competitive. Whether you're in technology, education, or the
+            competitive. Whether you are in technology, education, or the
             culinary arts, keeping up with the latest news and articles in your
             field ensures you stay ahead.
           </p>
