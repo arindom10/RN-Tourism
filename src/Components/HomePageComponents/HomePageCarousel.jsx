@@ -1,12 +1,14 @@
 import { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 const HomePageCarousel = () => {
+  const [isVisible, setIsVisible] = useState(false);
   const images = [
-    "https://i.ibb.co/bs9VBwc/Untitled-design-1.png",
+    "https://i.ibb.co.com/5jXJcjX/image-2025-01-25-01-02-41.webp",
     "https://i.ibb.co/mTY1QNJ/file-10-3-1.png",
     "https://i.ibb.co/KyYJbKG/file-10-3.png",
   ];
-
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
@@ -26,39 +28,59 @@ const HomePageCarousel = () => {
       <div className="absolute top-4 left-4 z-10">
         <button
           className="text-white text-2xl"
-          onClick={() =>
-            document.getElementById("menu").classList.toggle("hidden")
-          }
+          onClick={() => setIsVisible(!isVisible)}
         >
-          <i className="fas fa-bars"></i>
+          <GiHamburgerMenu />
         </button>
-        <div
-          id="menu"
-          className="hidden absolute top-12 left-0 bg-gray-800 text-white w-48 rounded shadow-lg"
-        >
-          <ul className="flex flex-col space-y-2 p-4">
-            <li>
-              <a href="#" className="hover:text-yellow-500">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-yellow-500">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-yellow-500">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-yellow-500">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
+        {isVisible ? (
+          <div
+            id="menu"
+            className=" absolute top-12 left-0  text-white w-48 rounded shadow-lg"
+          >
+            <ul className="flex flex-col space-y-2 p-4">
+              <li>
+                <Link href="/" className="hover:text-yellow-500">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="hover:text-yellow-500">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/program" className="hover:text-yellow-500">
+                  Program
+                </Link>
+              </li>
+              <li>
+                <Link to="/faculty" className="hover:text-yellow-500">
+                  Our Faculty
+                </Link>
+              </li>
+              <li>
+                <Link to="/blogs" className="hover:text-yellow-500">
+                  Blogs
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-yellow-500">
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/verify-certificate"
+                  className="hover:text-yellow-500"
+                >
+                  Verify Certificate
+                </Link>
+              </li>
+            </ul>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
 
       <div className="absolute top-4 right-4 z-10 flex space-x-4">
@@ -73,35 +95,37 @@ const HomePageCarousel = () => {
         </a>
       </div>
 
-      <div className="relative h-screen flex items-center justify-center">
+      <div className="relative h-screen flex items-center justify-center ">
         <img
           src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
           className="w-full h-screen object-cover"
         />
-        <div className="absolute bottom-16 left-8 bg-yellow-100 bg-opacity-90 p-6 rounded-md shadow-lg max-w-sm">
+        <div className="absolute bottom-16 left-40 bg-yellow-100 bg-opacity-90 p-6 rounded-md shadow-lg hidden md:block">
           <h2 className="text-gray-900 font-bold text-xl mb-2">
             Let’s Create Your Dream Space
           </h2>
           <div className="flex items-center space-x-8 mb-4">
-            <div>
+            <div className="flex space-x-4">
               <h3 className="text-xl font-bold text-gray-800">2.5k+</h3>
               <p className="text-sm text-gray-600">Certifications Done</p>
             </div>
-            <div>
+            <div className="flex space-x-4">
               <h3 className="text-xl font-bold text-gray-800">100+</h3>
               <p className="text-sm text-gray-600">Partners Worldwide</p>
             </div>
+            <p className="text-sm text-gray-600">Tell Us About Your Mind</p>
+            <button className="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600">
+              Get Quote
+            </button>
           </div>
-          <button className="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600">
-            Get Quote
-          </button>
         </div>
-        <div className="absolute bottom-16 right-8 bg-red-500 text-white p-4 rounded-full w-32 h-32 flex items-center justify-center shadow-lg">
-          <span className="text-center">
-            Explore <br />
-            Services
-          </span>
+        <div className="absolute bottom-16 right-80 p-4 hidden md:block">
+          <img
+            className="w-3/4 h-3/4"
+            src="https://i.ibb.co.com/tC6yBPX/Frame-5.png"
+            alt=""
+          />
         </div>
 
         <button
