@@ -1,5 +1,5 @@
 import AboutJourney from "./AboutJourney";
-import AcademyLocations from "./AcademyLocations.JSX";
+import AcademyLocations from "./AcademyLocations";
 import AlumniTestimonials from "./AlumniTestimonials";
 import CallToActionSection from "./CallToActionSection";
 import FAQAndVideoSection from "./FAQAndVideoSection";
