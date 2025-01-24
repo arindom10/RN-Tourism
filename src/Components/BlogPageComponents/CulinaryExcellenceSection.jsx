@@ -1,4 +1,12 @@
-import { FaCalendarAlt, FaComment, FaUser } from "react-icons/fa";
+import {
+  FaCalendarAlt,
+  FaComment,
+  FaFacebook,
+  FaInstagram,
+  FaUser,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa";
 
 const CulinaryExcellenceSection = () => {
   return (
@@ -106,7 +114,7 @@ const CulinaryExcellenceSection = () => {
             <img
               src="https://i.ibb.co.com/yq2rbMx/handsome-african-american-male-wears-apron-cooks-UEK5-RDA-jpg.png"
               alt="Profile"
-              className="w-16 h-16 rounded-full object-cover mr-4"
+              className="w-16 h-16  object-cover mr-4"
             />
 
             <div>
@@ -117,6 +125,12 @@ const CulinaryExcellenceSection = () => {
                 Suspendisse potenti. Nam sem tortor, dapibus et hendrerit eu,
                 ornare vitae arcu. Nunc porta libero.
               </p>
+            </div>
+            <div className="flex space-x-5 text-white ">
+              <FaFacebook className="text-lg cursor-pointer  bg-[#F0E19A] " />
+              <FaInstagram className="text-lg cursor-pointer  bg-[#F0E19A] " />
+              <FaWhatsapp className="text-lg cursor-pointer  bg-[#F0E19A]" />
+              <FaYoutube className="text-lg cursor-pointer  bg-[#F0E19A]" />
             </div>
           </div>
         </div>

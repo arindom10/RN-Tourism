@@ -22,7 +22,6 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Simulate a successful form submission
     setTimeout(() => {
       setSuccessMessage("Your message has been successfully sent!");
       setFormData({
@@ -46,9 +45,7 @@ const Contact = () => {
             form below, and we will get back to you as soon as possible.
           </p>
 
-          {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Name */}
             <div>
               <label
                 htmlFor="name"
@@ -68,7 +65,6 @@ const Contact = () => {
               />
             </div>
 
-            {/* Email */}
             <div>
               <label
                 htmlFor="email"
@@ -88,7 +84,6 @@ const Contact = () => {
               />
             </div>
 
-            {/* Subject */}
             <div>
               <label
                 htmlFor="subject"
@@ -108,7 +103,6 @@ const Contact = () => {
               />
             </div>
 
-            {/* Message */}
             <div>
               <label
                 htmlFor="message"
@@ -128,7 +122,6 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            {/* Submit Button */}
             <div className="text-center">
               <button
                 type="submit"
@@ -139,14 +132,12 @@ const Contact = () => {
             </div>
           </form>
 
-          {/* Success Message */}
           {successMessage && (
             <div className="mt-6 bg-green-100 text-green-700 p-4 rounded-md text-center">
               ✅ {successMessage}
             </div>
           )}
 
-          {/* Contact Information */}
           <div className="mt-8">
             <h2 className="text-lg font-bold text-gray-700 mb-2">
               Our Contact Information

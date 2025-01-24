@@ -57,7 +57,6 @@ const Certificate = () => {
             </div>
           </form>
 
-          {/* Verification Result */}
           {verificationResult === "success" && (
             <div className="mt-6 bg-green-100 text-green-700 p-4 rounded-md">
               ✅ The certificate is valid and authentic!
@@ -70,7 +69,6 @@ const Certificate = () => {
           )}
         </div>
 
-        {/* Additional Info */}
         <div className="mt-8 max-w-screen-md text-center text-gray-600">
           <p>
             If you have any issues verifying a certificate, please{" "}

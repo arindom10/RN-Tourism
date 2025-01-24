@@ -8,7 +8,6 @@ const Navbar = () => {
     <nav className="bg-[#f3e09a] shadow-lg container mx-auto relative">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-3">
-          {/* Logo */}
           <Link to="/">
             <div className="flex items-center space-x-4">
               <img
@@ -19,7 +18,6 @@ const Navbar = () => {
             </div>
           </Link>
 
-          {/* Navbar Links */}
           <div className="hidden md:flex items-center space-x-6 mr-60">
             <Link
               to="/"
@@ -70,14 +68,12 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Apply Now Button */}
           <div className="bg-[#33090a] absolute right-10 ">
             <div className="hidden md:block relative right-1 bottom-1">
               <Link
                 to="/apply-now"
                 className="bg-[#a12326] text-white px-4 py-2 text-sm font-medium  flex items-center hover:bg-[#871d1f]"
               >
-                {/* Icon */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"

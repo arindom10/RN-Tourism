@@ -24,7 +24,6 @@ const ApplyNow = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Mock form submission
     setTimeout(() => {
       setSuccessMessage(
         "Your application for a certificate has been successfully submitted!"
@@ -43,7 +42,6 @@ const ApplyNow = () => {
     <div>
       <div className="bg-gray-100 min-h-screen flex flex-col justify-center items-center px-4">
         <div className="max-w-screen-md w-full bg-white shadow-lg rounded-lg p-6 md:p-10">
-          {/* Heading */}
           <h1 className="text-3xl font-bold text-[#a12326] text-center mb-4">
             Apply for Certificate
           </h1>
@@ -52,9 +50,7 @@ const ApplyNow = () => {
             certificate.
           </p>
 
-          {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Full Name */}
             <div>
               <label
                 htmlFor="fullName"
@@ -74,7 +70,6 @@ const ApplyNow = () => {
               />
             </div>
 
-            {/* Email */}
             <div>
               <label
                 htmlFor="email"
@@ -94,7 +89,6 @@ const ApplyNow = () => {
               />
             </div>
 
-            {/* Phone */}
             <div>
               <label
                 htmlFor="phone"
@@ -114,7 +108,6 @@ const ApplyNow = () => {
               />
             </div>
 
-            {/* Course */}
             <div>
               <label
                 htmlFor="course"
@@ -140,7 +133,6 @@ const ApplyNow = () => {
               </select>
             </div>
 
-            {/* Completion Date */}
             <div>
               <label
                 htmlFor="completionDate"
@@ -159,7 +151,6 @@ const ApplyNow = () => {
               />
             </div>
 
-            {/* Submit Button */}
             <div className="text-center">
               <button
                 type="submit"
@@ -170,7 +161,6 @@ const ApplyNow = () => {
             </div>
           </form>
 
-          {/* Success Message */}
           {successMessage && (
             <div className="mt-6 bg-green-100 text-green-700 p-4 rounded-md">
               ✅ {successMessage}
@@ -178,7 +168,6 @@ const ApplyNow = () => {
           )}
         </div>
 
-        {/* Additional Info */}
         <div className="mt-8 max-w-screen-md text-center text-gray-600">
           <p>
             If you have any issues applying for a certificate, please{" "}

@@ -12,7 +12,6 @@ const Footer = () => {
   return (
     <footer className="bg-[#1C1C1C] text-white py-10">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
-        {/* Logo & Description */}
         <div className="space-y-4">
           <Link to="/">
             <img
@@ -40,7 +39,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Contact Info */}
         <div>
           <h3 className="text-lg font-semibold mb-2">CONTACT INFO</h3>
           <hr className="border-gray-600 mb-4" />
@@ -58,7 +56,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Help Center */}
         <div>
           <h3 className="text-lg font-semibold mb-2">HELP CENTER</h3>
           <hr className="border-gray-600 mb-4" />
@@ -86,7 +83,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Quick Links */}
         <div>
           <h3 className="text-lg font-semibold mb-2">QUICK LINKS</h3>
           <hr className="border-gray-600 mb-4" />
@@ -110,7 +106,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Footer Bottom */}
       <div className="border-t border-gray-700 mt-8 pt-4 flex justify-center items-center">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
           <p>
