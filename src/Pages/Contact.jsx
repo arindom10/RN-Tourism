@@ -35,7 +35,7 @@ const Contact = () => {
 
   return (
     <div>
-      <div className="bg-gray-100 min-h-screen flex items-center justify-center px-4">
+      <div className="bg-gray-100 min-h-screen flex items-center justify-center px-4 mt-10">
         <div className="max-w-screen-md bg-white shadow-lg rounded-lg p-6 md:p-10">
           <h1 className="text-3xl font-bold text-[#a12326] text-center mb-4">
             Contact Us

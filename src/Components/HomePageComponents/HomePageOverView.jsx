@@ -1,4 +1,3 @@
-import Footer from "../Common/Footer/Footer";
 import AboutJourney from "./AboutJourney";
 import AcademyLocations from "./AcademyLocations";
 import AlumniTestimonials from "./AlumniTestimonials";
@@ -12,7 +11,7 @@ import YourFoodFuture from "./YourFoodFuture";
 
 const HomePageOverView = () => {
   return (
-    <div className="absolute top-0 w-full">
+    <div>
       <HomePageCarousel />
       <AboutJourney />
       <ProfessionalPrograms />
@@ -23,7 +22,6 @@ const HomePageOverView = () => {
       <FAQAndVideoSection />
       <LatestNewsSection />
       <CallToActionSection />
-      <Footer />
     </div>
   );
 };

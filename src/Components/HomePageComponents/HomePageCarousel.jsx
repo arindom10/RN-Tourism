@@ -24,7 +24,7 @@ const HomePageCarousel = () => {
   };
 
   return (
-    <div className="relative bg-gray-900 h-screen">
+    <div className="relative  h-screen">
       <div className="absolute top-4 left-4 z-10">
         <button
           className="text-white text-2xl"
@@ -33,10 +33,7 @@ const HomePageCarousel = () => {
           <GiHamburgerMenu />
         </button>
         {isVisible ? (
-          <div
-            id="menu"
-            className=" absolute top-12 left-0  text-white w-48 rounded shadow-lg"
-          >
+          <div id="menu" className="top-12 left-10 text-white w-48">
             <ul className="flex flex-col space-y-2 p-4">
               <li>
                 <Link href="/" className="hover:text-yellow-500">
@@ -81,18 +78,6 @@ const HomePageCarousel = () => {
         ) : (
           ""
         )}
-      </div>
-
-      <div className="absolute top-4 right-4 z-10 flex space-x-4">
-        <a href="#" className="text-white hover:text-yellow-500">
-          <i className="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" className="text-white hover:text-yellow-500">
-          <i className="fab fa-instagram"></i>
-        </a>
-        <a href="#" className="text-white hover:text-yellow-500">
-          <i className="fab fa-youtube"></i>
-        </a>
       </div>
 
       <div className="relative h-screen flex items-center justify-center ">

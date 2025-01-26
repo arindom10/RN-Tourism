@@ -10,24 +10,26 @@ import Certificate from "../Pages/Certificate";
 import NotFound from "../Pages/NotFound";
 import ApplyNow from "../Pages/ApplyNow";
 
-import Navbar from "../Components/Common/Navbar/Navbar";
-import Footer from "../Components/Common/Footer/Footer";
+import HomeLayout from "../Layouts/HomeLayout";
+import OtherPageLayout from "../Layouts/OtherPageLayout";
 
 const AppRoutes = () => (
   <Router>
-    <Navbar />
     <Routes>
-      <Route path={RoutePaths.HOME} element={<Home />} />
-      <Route path={RoutePaths.NotFound} element={<NotFound />} />
-      <Route path={RoutePaths.ABOUT} element={<About />} />
-      <Route path={RoutePaths.PROGRAM} element={<Program />} />
-      <Route path={RoutePaths.FACULTY} element={<Faculty />} />
-      <Route path={RoutePaths.BLOGS} element={<Blogs />} />
-      <Route path={RoutePaths.CONTACT} element={<Contact />} />
-      <Route path={RoutePaths.CERTIFICATE} element={<Certificate />} />
-      <Route path={RoutePaths.ApplyNow} element={<ApplyNow />} />
+      <Route path="/" element={<HomeLayout />}>
+        <Route path={RoutePaths.HOME} element={<Home />} />
+      </Route>
+      <Route path="/" element={<OtherPageLayout />}>
+        <Route path={RoutePaths.NotFound} element={<NotFound />} />
+        <Route path={RoutePaths.ABOUT} element={<About />} />
+        <Route path={RoutePaths.PROGRAM} element={<Program />} />
+        <Route path={RoutePaths.FACULTY} element={<Faculty />} />
+        <Route path={RoutePaths.BLOGS} element={<Blogs />} />
+        <Route path={RoutePaths.CONTACT} element={<Contact />} />
+        <Route path={RoutePaths.CERTIFICATE} element={<Certificate />} />
+        <Route path={RoutePaths.ApplyNow} element={<ApplyNow />} />
+      </Route>
     </Routes>
-    <Footer />
   </Router>
 );
 
