@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 const HomePageCarousel = () => {
   const [isVisible, setIsVisible] = useState(false);
   const images = [
-    "https://i.ibb.co.com/5jXJcjX/image-2025-01-25-01-02-41.webp",
-    "https://i.ibb.co/mTY1QNJ/file-10-3-1.png",
-    "https://i.ibb.co/KyYJbKG/file-10-3.png",
+    "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D",
+    "https://virtuzone.com/wp-content/uploads/2024/04/restaurant-business-plan-template.jpg",
+    "https://lesroches.edu/wp-content/uploads/2022/08/Restaurant_business_plan_main.jpg",
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
