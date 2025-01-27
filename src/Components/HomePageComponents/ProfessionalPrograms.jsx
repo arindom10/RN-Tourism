@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ShortTermCourse from "./ShortTermCourse";
 
 const ProfessionalPrograms = () => {
   const [activeTab, setActiveTab] = useState("diploma");
@@ -68,15 +69,7 @@ const ProfessionalPrograms = () => {
           )}
           {activeTab === "short-term" && (
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                Short Term Course
-              </h3>
-              <p className="text-gray-600">
-                The Short Term Course is perfect for individuals seeking quick
-                and targeted learning opportunities in specific areas of tourism
-                and hospitality. It is designed to provide fast-track skills
-                needed to enter the industry.
-              </p>
+              <ShortTermCourse />
             </div>
           )}
           {activeTab === "other-related" && (

@@ -8,6 +8,7 @@ import HomePageCarousel from "./HomePageCarousel";
 import LatestNewsSection from "./LatestNewsSection";
 import ProfessionalPrograms from "./ProfessionalPrograms";
 import YourFoodFuture from "./YourFoodFuture";
+import ShortTermCourse from "./ShortTermCourse";
 
 const HomePageOverView = () => {
   return (
