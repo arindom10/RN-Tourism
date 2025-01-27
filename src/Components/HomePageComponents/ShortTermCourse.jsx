@@ -1,6 +1,5 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
-// Card Component to reuse for each course
 const Card = ({ course }) => (
   <div className={`bg-${course.bgColor} border border-gray-300   p-5 mt-4`}>
     {/* Image Section */}
@@ -61,9 +60,11 @@ const Card = ({ course }) => (
         </div>
 
         {/* Action Button */}
-        <button className="bg-red-600 hover:bg-red-700 text-white text-sm py-2 px-4 rounded shadow">
-          View Program
-        </button>
+        <Link to="*">
+          <button className="mt-6 bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded">
+            View Program
+          </button>
+        </Link>
       </div>
     </div>
   </div>
@@ -191,7 +192,6 @@ const ShortTermCourse = () => {
       mentorImage:
         "https://i.ibb.co.com/JF7qnSz/confident-female-chef-F4-C8-T9-H-jpg.png",
     },
-    // You can add more courses in the same structure
   ];
 
   return (
@@ -218,9 +218,11 @@ const ShortTermCourse = () => {
             <li>• Small Batches</li>
             <li>• Career Advancement Assured</li>
           </ul>
-          <button className="mt-6 bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded">
-            View Program
-          </button>
+          <Link to="*">
+            <button className="mt-6 bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded">
+              View Program
+            </button>
+          </Link>
         </div>
         {/* Image Section */}
         <div className="flex-1">

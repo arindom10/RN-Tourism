@@ -1,5 +1,7 @@
 import { useState } from "react";
 import ShortTermCourse from "./ShortTermCourse";
+import DiplomaCourse from "./DiplomaCourse";
+import OtherRelatedCourse from "./OtherRelatedCourse";
 
 const ProfessionalPrograms = () => {
   const [activeTab, setActiveTab] = useState("diploma");
@@ -55,16 +57,7 @@ const ProfessionalPrograms = () => {
         <div className="p-6 bg-gray-100 rounded-lg shadow-md">
           {activeTab === "diploma" && (
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                Diploma Course
-              </h3>
-              <p className="text-gray-600">
-                Our Diploma Course is a comprehensive program designed to equip
-                students with advanced knowledge and practical skills in tourism
-                and hospitality management. This course focuses on
-                industry-specific practices, career development, and leadership
-                skills.
-              </p>
+              <DiplomaCourse />
             </div>
           )}
           {activeTab === "short-term" && (
@@ -74,14 +67,7 @@ const ProfessionalPrograms = () => {
           )}
           {activeTab === "other-related" && (
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                Other Related Courses
-              </h3>
-              <p className="text-gray-600">
-                Explore our other related courses that cater to various aspects
-                of the tourism and hospitality industry, such as culinary arts,
-                event management, and travel consultancy.
-              </p>
+              <OtherRelatedCourse />
             </div>
           )}
         </div>
