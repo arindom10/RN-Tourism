@@ -24,19 +24,19 @@ const HomePageCarousel = () => {
   };
 
   return (
-    <div className="relative  h-screen">
-      <div className="absolute top-4 left-4 z-10">
+    <div className="relative w-full h-screen">
+      <div className="absolute top-4 left-4 z-20">
         <button
-          className="text-white text-2xl"
+          className="text-white text-3xl md:text-4xl"
           onClick={() => setIsVisible(!isVisible)}
         >
           <GiHamburgerMenu />
         </button>
-        {isVisible ? (
-          <div id="menu" className="top-12 left-10 text-white w-48">
-            <ul className="flex flex-col space-y-2 p-4">
+        {isVisible && (
+          <div className="absolute top-12 left-0  font-bold text-white w-48 p-4  z-30">
+            <ul className="flex flex-col space-y-3">
               <li>
-                <Link href="/" className="hover:text-yellow-500">
+                <Link to="/" className="hover:text-yellow-500">
                   Home
                 </Link>
               </li>
@@ -75,17 +75,16 @@ const HomePageCarousel = () => {
               </li>
             </ul>
           </div>
-        ) : (
-          ""
         )}
       </div>
 
-      <div className="relative h-screen flex items-center justify-center ">
+      <div className="relative w-full h-screen flex items-center justify-center">
         <img
           src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
-          className="w-full h-screen object-cover"
+          className="w-full h-full object-cover"
         />
+
         <div className="absolute bottom-16 left-40 bg-yellow-100 bg-opacity-90 p-6 rounded-md shadow-lg hidden md:block">
           <h2 className="text-gray-900 font-bold text-xl mb-2">
             Let’s Create Your Dream Space
@@ -105,6 +104,7 @@ const HomePageCarousel = () => {
             </button>
           </div>
         </div>
+
         <div className="absolute bottom-16 right-80 p-4 hidden md:block">
           <img
             className="w-3/4 h-3/4"
@@ -115,15 +115,15 @@ const HomePageCarousel = () => {
 
         <button
           onClick={prevSlide}
-          className="absolute left-4 text-white text-2xl bg-gray-800 bg-opacity-50 rounded-full p-2 hover:bg-gray-700"
+          className="absolute left-4 text-white text-2xl md:text-3xl bg-gray-800 bg-opacity-50 rounded-full p-2 hover:bg-gray-700"
         >
-          <i className="fas fa-chevron-left"></i>
+          ❮
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-4 text-white text-2xl bg-gray-800 bg-opacity-50 rounded-full p-2 hover:bg-gray-700"
+          className="absolute right-4 text-white text-2xl md:text-3xl bg-gray-800 bg-opacity-50 rounded-full p-2 hover:bg-gray-700"
         >
-          <i className="fas fa-chevron-right"></i>
+          ❯
         </button>
       </div>
 
@@ -132,8 +132,8 @@ const HomePageCarousel = () => {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`h-3 w-3 rounded-full ${
-              currentIndex === index ? "bg-white" : "bg-gray-400"
+            className={`h-3 w-3 rounded-full transition-all duration-300 ${
+              currentIndex === index ? "bg-white scale-125" : "bg-gray-400"
             }`}
           ></button>
         ))}

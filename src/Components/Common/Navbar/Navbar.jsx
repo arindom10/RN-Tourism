@@ -1,75 +1,54 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
   const [isProgramOpen, setIsProgramOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-[#f3e09a] shadow-lg container mx-auto relative">
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-[#f3e09a] shadow-lg">
+      <div className="max-w-screen-xl mx-auto px-6 sm:px-8">
         <div className="flex justify-between items-center py-3">
           <Link to="/">
-            <div className="flex items-center space-x-4">
-              <img
-                src="https://i.ibb.co/WfxX1MZ/0e7a6f48deab82829323eddb5ea76650.png"
-                alt="Logo"
-                className="h-[108px]"
-              />
-            </div>
+            <img
+              src="https://i.ibb.co/WfxX1MZ/0e7a6f48deab82829323eddb5ea76650.png"
+              alt="Logo"
+              className="h-16 md:h-[108px]"
+            />
           </Link>
 
-          <div className="hidden md:flex items-center space-x-6 mr-60">
-            <Link
-              to="/"
-              className="text-sm font-medium text-gray-800 hover:text-gray-600"
-            >
+          <div className="hidden md:flex items-center space-x-6">
+            <Link to="/" className="nav-link">
               HOME
             </Link>
-            <Link
-              to="/about"
-              className="text-sm font-medium text-gray-800 hover:text-gray-600"
-            >
+            <Link to="/about" className="nav-link">
               ABOUT
             </Link>
-
             <Link
               to="/program"
-              className="relative text-sm font-medium text-gray-800 hover:text-gray-600"
+              className="nav-link"
               onClick={() => setIsProgramOpen(!isProgramOpen)}
-              aria-haspopup="true"
-              aria-expanded={isProgramOpen}
             >
               PROGRAM
             </Link>
-
-            <Link
-              to="/faculty"
-              className="text-sm font-medium text-gray-800 hover:text-gray-600"
-            >
+            <Link to="/faculty" className="nav-link">
               OUR FACULTY
             </Link>
-            <Link
-              to="/blogs"
-              className="text-sm font-medium text-gray-800 hover:text-gray-600"
-            >
+            <Link to="/blogs" className="nav-link">
               BLOGS
             </Link>
-            <Link
-              to="/contact"
-              className="text-sm font-medium text-gray-800 hover:text-gray-600"
-            >
+            <Link to="/contact" className="nav-link">
               CONTACT
             </Link>
-            <Link
-              to="/verify-certificate"
-              className="text-sm font-medium text-gray-800 hover:text-gray-600"
-            >
+            <Link to="/verify-certificate" className="nav-link">
               VERIFY CERTIFICATE
             </Link>
           </div>
 
-          <div className="bg-[#33090a] absolute right-10 ">
-            <div className="hidden md:block relative right-1 bottom-1">
+          <div className="bg-[#33090a] ">
+            <div className="hidden md:block">
               <Link
                 to="/apply-now"
                 className="bg-[#a12326] text-white px-4 py-2 text-sm font-medium  flex items-center hover:bg-[#871d1f]"
@@ -86,7 +65,76 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
+
+          <button
+            className="md:hidden text-gray-800 text-2xl"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <IoMdClose /> : <GiHamburgerMenu />}
+          </button>
         </div>
+
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-[#f3e09a] shadow-md p-6 space-y-4">
+            <Link
+              to="/"
+              className="block mobile-link"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              HOME
+            </Link>
+            <Link
+              to="/about"
+              className="block mobile-link"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              ABOUT
+            </Link>
+            <Link
+              to="/program"
+              className="block mobile-link"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              PROGRAM
+            </Link>
+            <Link
+              to="/faculty"
+              className="block mobile-link"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              OUR FACULTY
+            </Link>
+            <Link
+              to="/blogs"
+              className="block mobile-link"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              BLOGS
+            </Link>
+            <Link
+              to="/contact"
+              className="block mobile-link"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              CONTACT
+            </Link>
+            <Link
+              to="/verify-certificate"
+              className="block mobile-link"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              VERIFY CERTIFICATE
+            </Link>
+
+            <Link
+              to="/apply-now"
+              className="apply-btn block text-center"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              APPLY NOW
+            </Link>
+          </div>
+        )}
       </div>
     </nav>
   );
