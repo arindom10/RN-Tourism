@@ -1,8 +1,8 @@
 const GallerySection = () => {
   return (
-    <section className="bg-white py-16">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+    <section className="bg-white py-12 md:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
           <div className="h-auto">
             <img
               src="https://i.ibb.co.com/0ZKk0GV/Rectangle-9.png"
@@ -12,30 +12,30 @@ const GallerySection = () => {
           </div>
 
           <div className="text-center lg:mx-6 relative">
-            <p className="text-yellow-600 font-semibold text-sm uppercase tracking-wider">
+            <p className="text-yellow-600 font-semibold text-xs md:text-sm uppercase tracking-wider">
               Gallery
             </p>
-            <h2 className="text-3xl font-bold text-red-800 mt-2">
+            <h2 className="text-2xl md:text-3xl font-bold text-red-800 mt-2">
               A Glimpse of Excellence
             </h2>
-            <p className="text-gray-600 mt-4 leading-relaxed">
+            <p className="text-gray-600 mt-4 leading-relaxed text-sm md:text-base">
               Step into our world of culinary artistry through our gallery,
               showcasing vibrant moments of learning, creativity, and passion.
               Experience the journey of our students and faculty in action!
             </p>
-            <button className="mt-6 px-8 py-2 bg-red-700 text-white text-sm font-semibold rounded hover:bg-red-800 transition duration-300">
+            <button className="mt-6 px-6 md:px-8 py-2 bg-red-700 text-white text-sm md:text-base font-semibold rounded hover:bg-red-800 transition duration-300">
               View More
             </button>
 
             <div className="grid grid-cols-2 gap-4 mt-8">
-              <div className="h-40">
+              <div className="h-32 md:h-40">
                 <img
                   src="https://i.ibb.co.com/vjB7bqw/Rectangle-11.png"
                   alt="Gallery 3"
                   className="rounded-lg shadow-md w-full h-full object-cover"
                 />
               </div>
-              <div className="h-40">
+              <div className="h-32 md:h-40">
                 <img
                   src="https://i.ibb.co.com/G9hsTtg/Rectangle-12.png"
                   alt="Gallery 4"
@@ -58,7 +58,7 @@ const GallerySection = () => {
           <img
             src="https://i.ibb.co.com/LPDLrqF/Rectangle-15.png"
             alt="Gallery 5"
-            className="rounded-lg w-full h-full object-cover shadow-lg"
+            className="rounded-lg w-full h-auto object-cover shadow-lg"
           />
         </div>
       </div>

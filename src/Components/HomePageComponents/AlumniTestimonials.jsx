@@ -24,29 +24,31 @@ const AlumniTestimonials = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-100">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex justify-between items-center mb-8">
-          <div>
-            <p className="text-yellow-500 font-medium">GET INSPIRED</p>
-            <h2 className="text-4xl font-bold text-red-900 font-serif">
-              CHEFACA ALUMNI TESTIMOBIALS
+    <section className="py-12 md:py-16 bg-gray-100">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row justify-between items-center mb-10">
+          <div className="text-center md:text-left">
+            <p className="text-yellow-500 font-medium text-sm uppercase">
+              Get Inspired
+            </p>
+            <h2 className="text-2xl md:text-4xl font-bold text-red-900 mt-2">
+              Chefaca Alumni Testimonials
             </h2>
           </div>
           <a
             href="*"
-            className="text-white bg-red-900 px-4 py-2 rounded hover:bg-red-700"
+            className="mt-4 md:mt-0 bg-red-900 text-white px-6 py-2 rounded-lg text-sm md:text-base hover:bg-red-700 transition duration-300"
           >
             View All Testimonials
           </a>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
-          <div className="relative ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="relative">
             <img
               src="https://i.ibb.co.com/ftcf2pJ/Background-Border-3.png"
               alt="Alumni"
-              className="w-full h-full object-cover rounded-lg shadow"
+              className="w-full h-auto object-cover rounded-lg shadow-lg"
             />
             <div className="absolute bottom-4 left-4 bg-red-900 text-white px-4 py-2 rounded shadow">
               <h3 className="font-bold text-lg">Tariq Al-Mozahhed</h3>
@@ -71,24 +73,25 @@ const AlumniTestimonials = () => {
               </button>
             </div>
           </div>
-
-          <div className="bg-[#CD9B2F] p-6 rounded-lg shadow">
+          <div className="bg-[#CD9B2F] p-6 rounded-lg shadow-lg">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="mb-6">
-                <p className="text-gray-800 italic mb-4">
+                <p className="text-gray-800 italic text-sm md:text-base mb-4">
                   &quot;{testimonial.message}&quot;
                 </p>
                 <div className="flex items-center">
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="w-12 h-12  mr-4"
+                    className="w-12 h-12 rounded-full mr-4"
                   />
                   <div>
-                    <h4 className="text-red-900 font-bold">
+                    <h4 className="text-red-900 font-bold text-sm md:text-base">
                       {testimonial.name}
                     </h4>
-                    <p className="text-sm text-gray-600">{testimonial.title}</p>
+                    <p className="text-xs md:text-sm text-gray-700">
+                      {testimonial.title}
+                    </p>
                   </div>
                 </div>
               </div>
