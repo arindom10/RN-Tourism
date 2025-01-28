@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const CallToActionSection = () => {
   return (
     <section className="py-16">
@@ -20,9 +22,11 @@ const CallToActionSection = () => {
           </h2>
 
           <div className="text-center lg:text-left">
-            <button className="bg-[#993128] text-white px-8 py-3 text-lg sm:text-xl md:text-2xl font-semibold rounded shadow-md hover:bg-red-800 transition-all duration-300">
-              Apply Now
-            </button>
+            <Link to="/apply-now">
+              <button className="bg-[#993128] text-white px-8 py-3 text-lg sm:text-xl md:text-2xl font-semibold rounded shadow-md hover:bg-red-800 transition-all duration-300">
+                Apply Now
+              </button>
+            </Link>
           </div>
         </div>
       </div>
