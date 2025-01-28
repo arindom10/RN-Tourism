@@ -2,7 +2,6 @@ const AwardCertification = () => {
   return (
     <div className="container mx-auto px-6 py-16">
       <div className="flex flex-col lg:flex-row justify-between items-center">
-        {/* Left Content */}
         <div className="w-full lg:w-1/2 lg:pr-8 mb-12 lg:mb-0">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Be part of a close-knit community, where everyone knows your
@@ -52,8 +51,6 @@ const AwardCertification = () => {
             </a>
           </div>
         </div>
-
-        {/* Right Image */}
         <div className="w-full lg:w-1/2 lg:pl-8">
           <a href="https://imgbb.com/">
             <img
