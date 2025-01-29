@@ -33,7 +33,7 @@ const HomePageCarousel = () => {
           <GiHamburgerMenu />
         </button>
         {isVisible && (
-          <div className="absolute top-12 left-0  font-bold text-white w-48 p-4  z-30">
+          <div className="absolute top-12 left-0  font-bold text-white w-48 p-4  z-30 transition-opacity">
             <ul className="flex flex-col space-y-3">
               <li>
                 <Link to="/" className="hover:text-yellow-500">

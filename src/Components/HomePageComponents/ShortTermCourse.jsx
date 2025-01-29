@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 const Card = ({ course }) => (
   <div className={`bg-${course.bgColor} border border-gray-300   p-5 mt-4`}>
-    {/* Image Section */}
     <div>
       <img
         className="w-full h-full rounded-t-lg"
@@ -11,13 +10,12 @@ const Card = ({ course }) => (
       />
     </div>
 
-    {/* Content Section */}
     <div className="p-6">
       {/* Title */}
       <h3 className={`text-2xl font-semibold ${course.textColor} mb-2`}>
         {course.title}
       </h3>
-      {/* Description */}
+
       <p className={`text-${course.descColor} text-sm mb-4`}>
         {course.description}
         <span className={`text-${course.linkColor} cursor-pointer`}>
@@ -26,7 +24,6 @@ const Card = ({ course }) => (
         </span>
       </p>
 
-      {/* Details */}
       <ul className={`text-${course.detailsColor} text-sm mb-6 space-y-1`}>
         <li>
           <strong>Duration:</strong> {course.duration}
@@ -42,9 +39,7 @@ const Card = ({ course }) => (
         </li>
       </ul>
 
-      {/* Footer Section */}
       <div className="flex items-center justify-between">
-        {/* Mentor Info */}
         <div className="flex items-center">
           <img
             className="w-12 h-12 object-cover"
@@ -59,7 +54,6 @@ const Card = ({ course }) => (
           </div>
         </div>
 
-        {/* Action Button */}
         <Link to="*">
           <button className="mt-6 bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded">
             View Program
@@ -196,9 +190,7 @@ const ShortTermCourse = () => {
 
   return (
     <div>
-      {/* Top Section */}
       <div className="bg-black text-white rounded-lg shadow-lg mx-auto flex">
-        {/* Text Section */}
         <div className="p-8 flex-1">
           <p className="text-yellow-400 uppercase text-sm font-medium mb-2">
             Special Categories
@@ -224,7 +216,7 @@ const ShortTermCourse = () => {
             </button>
           </Link>
         </div>
-        {/* Image Section */}
+
         <div className="flex-1">
           <img
             className="w-full h-full object-cover rounded-r-lg"
@@ -234,7 +226,6 @@ const ShortTermCourse = () => {
         </div>
       </div>
 
-      {/* Course Cards Section */}
       <div className="bg-gray-100 min-h-screen flex items-center justify-center px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl">
           {courses.map((course, index) => (

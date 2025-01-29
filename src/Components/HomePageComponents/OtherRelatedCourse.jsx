@@ -15,7 +15,7 @@ const OtherRelatedCourse = () => {
       ],
       experience: "02+",
       experienceText: "Years of Experience",
-      image: "https://i.ibb.co/7KMjgJR/Frame-75-1.png", // Updated image URL
+      image: "https://i.ibb.co/7KMjgJR/Frame-75-1.png",
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ const OtherRelatedCourse = () => {
       ],
       experience: "02+",
       experienceText: "Years of Experience",
-      image: "https://i.ibb.co/7KMjgJR/Frame-75-1.png", // Updated image URL
+      image: "https://i.ibb.co/7KMjgJR/Frame-75-1.png",
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ const OtherRelatedCourse = () => {
       ],
       experience: "02+",
       experienceText: "Years of Experience",
-      image: "https://i.ibb.co/7KMjgJR/Frame-75-1.png", // Updated image URL
+      image: "https://i.ibb.co/7KMjgJR/Frame-75-1.png",
     },
     {
       id: 4,
@@ -60,7 +60,7 @@ const OtherRelatedCourse = () => {
       ],
       experience: "02+",
       experienceText: "Years of Experience",
-      image: "https://i.ibb.co/7KMjgJR/Frame-75-1.png", // Updated image URL
+      image: "https://i.ibb.co/7KMjgJR/Frame-75-1.png",
     },
   ];
 
@@ -71,7 +71,6 @@ const OtherRelatedCourse = () => {
           key={course.id}
           className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-2 bg-gray-900 p-3"
         >
-          {/* Left Content */}
           <div>
             <h1 className="text-4xl font-bold mb-4 leading-tight">
               {course.title}
@@ -91,7 +90,6 @@ const OtherRelatedCourse = () => {
             </Link>
           </div>
 
-          {/* Right Content */}
           <div className="relative">
             <img
               src={course.image}
